@@ -160,9 +160,9 @@ pip install -r requirements.txt
 ## Explanation of the Diagram
 
 ### 1. **Input Layer**
-   - **Image Directory**: Contains the images to be indexed and searched.
-   - **Text Query**: The user's natural language input for searching images.
-   - **Gradio Interface**: The web-based UI for user interaction.
+   - **Image Directory (Dataset)**: Contains the images to be indexed and searched.
+   - **Text Query (User query)**: The user's natural language input for searching images.
+   - **Gradio Interface (UI)**: The web-based UI for user interaction.
 
 ---
 
