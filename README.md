@@ -114,7 +114,7 @@ semantic-image-search/
 │   ├── embeddings.py          # Embedding generation using CLIP
 │   └── indexer.py             # FAISS index creation and search
 ├── dataset/                   # Directory for images and embeddings
-│   ├── images/                # Place your images here
+│   ├── sample_images/         # Place your subset images here
 │   └── embeddings/            # Embeddings and index files are saved here
 ├── requirements.txt           # List of dependencies
 └── README.md                  # This file
@@ -153,11 +153,4 @@ pip install -r requirements.txt
 4. **No Results Found**:
    - Ensure the image directory contains valid images with supported extensions (`.png`, `.jpg`, `.jpeg`, `.webp`).
 
----
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Enjoy building and using your semantic image search application! 🚀
