@@ -154,3 +154,89 @@ pip install -r requirements.txt
    - Ensure the image directory contains valid images with supported extensions (`.png`, `.jpg`, `.jpeg`, `.webp`).
 
 
+## System Diagram
+<img width="860" alt="Screenshot 2025-02-11 at 16 51 44" src="https://github.com/user-attachments/assets/cfab5893-a6be-4667-9b9f-67b581470a51" />
+
+## Explanation of the Diagram
+
+### 1. **Input Layer**
+   - **Image Directory**: Contains the images to be indexed and searched.
+   - **Text Query**: The user's natural language input for searching images.
+   - **Gradio Interface**: The web-based UI for user interaction.
+
+---
+
+### 2. **Core Processing Layer**
+   - **Embedding Generator (CLIP Model)**:
+     - Converts images and text into high-dimensional vectors (embeddings).
+     - Ensures embeddings are normalized for efficient similarity comparison.
+   - **FAISS Index (Indexer)**:
+     - Stores image embeddings in a searchable index.
+     - Enables fast retrieval of similar embeddings using L2 distance or cosine similarity.
+   - **Search Engine**:
+     - Coordinates the search process by integrating the embedding generator and FAISS index.
+     - Retrieves the top `k` most similar images for a given query.
+
+---
+
+### 3. **Data Storage & Retrieval Layer**
+   - **FAISS Index File (`image_index.faiss`)**:
+     - Stores the indexed embeddings for fast similarity search.
+   - **Image Paths File (`image_paths.npy`)**:
+     - Maps embeddings to their corresponding image paths for retrieval.
+   - **Logs**:
+     - Optional logging for debugging and monitoring system performance.
+
+---
+
+### 4. **Output Layer**
+   - **Search Results**:
+     - The top `k` images most similar to the query are displayed in the Gradio interface.
+   - **Status Messages**:
+     - Provides feedback to the user (e.g., "Found 5 results for query: 'a sunny beach scene'").
+
+---
+
+## Detailed Data Flow
+
+### **Indexing Phase**
+1. **Input**:
+   - Images are read from the `Image Directory`.
+2. **Processing**:
+   - Each image is passed to the `Embedding Generator` to create a vectorized embedding.
+   - Embeddings are stored in the `FAISS Index`.
+   - Image paths are saved in the `Image Paths File`.
+3. **Output**:
+   - The FAISS index and image paths are saved to disk for later use.
+
+### **Search Phase**
+1. **Input**:
+   - The user submits a text query through the Gradio interface.
+2. **Processing**:
+   - The query is converted into an embedding using the `Embedding Generator`.
+   - The `Search Engine` queries the FAISS index for the most similar image embeddings.
+   - The corresponding image paths are retrieved from the `Image Paths File`.
+3. **Output**:
+   - The images are loaded and displayed in the Gradio interface.
+
+---
+
+## Example Workflow
+
+### Step 1: Indexing
+1. User runs `create_embeddings.py` with `--image_dir dataset/images`.
+2. The system:
+   - Processes images and generates embeddings.
+   - Creates a FAISS index and saves it to `dataset/embeddings/image_index.faiss`.
+   - Saves image paths to `dataset/embeddings/image_paths.npy`.
+
+### Step 2: Searching
+1. User runs `app.py` to launch the Gradio interface.
+2. User enters a query (e.g., "a sunny beach scene") and selects the number of results.
+3. The system:
+   - Converts the query into an embedding.
+   - Searches the FAISS index for similar images.
+   - Retrieves and displays the top `k` images.
+
+---
+
