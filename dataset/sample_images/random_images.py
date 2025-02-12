@@ -4,8 +4,8 @@ import shutil
 
 random.seed(42)
 # Define source and target directories
-source_dir = "/Users/mzwandilemhlongo/Desktop/Data Science Courses/Courses/EndToEnd and APIs/text_to_image/dataset/sample_data/test_data_v2"
-target_dir = "/Users/mzwandilemhlongo/Desktop/Data Science Courses/Courses/EndToEnd and APIs/text_to_image/sample_images"
+source_dir = "./dataset/sample_data/test_data_v2"
+target_dir = "./sample_images"
 
 # Ensure the target directory exists
 os.makedirs(target_dir, exist_ok=True)
