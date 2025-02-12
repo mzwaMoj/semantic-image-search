@@ -4,7 +4,7 @@ This project provides a semantic image search application that allows users to s
 
 
 
-https://github.com/user-attachments/assets/15b0ff44-d124-48c7-b53e-b81a05379a06
+   https://github.com/user-attachments/assets/15b0ff44-d124-48c7-b53e-b81a05379a06
 
 
 
