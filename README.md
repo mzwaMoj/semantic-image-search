@@ -237,9 +237,8 @@ pip install -r requirements.txt
    - Converts the query into an embedding.
    - Searches the FAISS index for similar images.
    - Retrieves and displays the top `k` images.
-<img width="729" alt="Screenshot 2025-02-12 at 07 47 49" src="https://github.com/user-attachments/assets/db0f6f52-7f59-4bfb-9d75-996610c9f6e6" />
-<img width="806" alt="Screenshot 2025-02-12 at 07 46 41" src="https://github.com/user-attachments/assets/67611450-ed07-4820-9e04-0c0a6a2f1674" />
-<img width="847" alt="Screenshot 2025-02-12 at 07 46 07" src="https://github.com/user-attachments/assets/f860d8e1-0f40-4969-89a1-c878d50098c3" />
+<img width="847" alt="Screenshot 2025-02-12 at 07 46 07" src="https://github.com/user-attachments/assets/f82fbcf9-f3f3-4f36-a714-9719ba825523" />
+
 
 ---
 
