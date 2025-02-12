@@ -33,8 +33,6 @@ def extract_dataset():
     with zipfile.ZipFile(zip_filename, "r") as z:
         z.extractall(path=extract_folder)
     # Determine the location of test_data_v2 folder
-    # This assumes that the zip file contains a folder named 'test_data_v2' (or similar)
-    # Adjust accordingly if the folder structure differs.
     dataset_folder = os.path.join(extract_folder, source_subfolder)
     if not os.path.exists(dataset_folder):
         raise FileNotFoundError(f"Folder '{source_subfolder}' not found in the extracted dataset.")
