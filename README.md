@@ -240,9 +240,7 @@ pip install -r requirements.txt
   
 <img width="847" alt="Screenshot 2025-02-12 at 07 46 07" src="https://github.com/user-attachments/assets/e7cd9475-7588-4ca8-809c-1ef14174a0b4" />
 
+<img width="806" alt="Screenshot 2025-02-12 at 07 46 41" src="https://github.com/user-attachments/assets/94fa92f5-cb6b-4a4e-86ac-6892238a802e" />
 
-<img width="847" alt="Screenshot 2025-02-12 at 07 46 07" src="https://github.com/user-attachments/assets/f82fbcf9-f3f3-4f36-a714-9719ba825523" />
-
-
----
+<img width="729" alt="Screenshot 2025-02-12 at 07 47 49" src="https://github.com/user-attachments/assets/7aa19c63-e7c0-4deb-845c-8110f700d6cd" />
 
