@@ -110,6 +110,7 @@ semantic-image-search/
 ├── create_embeddings.py       # Script to generate embeddings and create FAISS index
 ├── app.py                     # Main application file (Gradio interface)
 ├── config.py                  # Configuration settings
+├── test_app.py                # Run tests
 ├── utils/
 │   ├── embeddings.py          # Embedding generation using CLIP
 │   └── indexer.py             # FAISS index creation and search
