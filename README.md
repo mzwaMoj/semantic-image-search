@@ -2,6 +2,12 @@
 
 This project provides a semantic image search application that allows users to search for images using natural language descriptions. The application leverages the **CLIP (Contrastive Language–Image Pretraining)** model to generate embeddings for both text and images, and uses **FAISS (Facebook AI Similarity Search)** for efficient similarity search.
 
+
+
+https://github.com/user-attachments/assets/15b0ff44-d124-48c7-b53e-b81a05379a06
+
+
+
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Installation](#installation)
