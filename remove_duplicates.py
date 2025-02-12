@@ -6,7 +6,7 @@ def main():
     # Convert Path objects to strings
     embeddings_path = str(Config.EMBEDDINGS_PATH)
     paths_file = str(Config.PATHS_FILE)
-    images_dir = str(Config.BASE_DIR.parent / "dataset/sample_images")  # Adjust if needed
+    images_dir = str(Config.BASE_DIR.parent / "dataset/sample_images") 
 
     # Load embeddings and image paths arrays
     embeddings = np.load(embeddings_path)
